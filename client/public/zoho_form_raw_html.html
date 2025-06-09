@@ -387,21 +387,44 @@
                     function validateEmail5637176000025292038() {
                         var form = document.forms["WebToLeads5637176000025292038"];
                         var emailFld = form.querySelectorAll("[ftype=email]");
-                        var i;
-                        for (i = 0; i < emailFld.length; i++) {
-                            var emailVal = emailFld[i].value;
-                            if (emailVal.replace(/^\s+|\s+$/g, "").length != 0) {
+                        var excludedDomains = [
+                            "gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "aol.com", "msn.com", "live.com",
+                            "icloud.com", "protonmail.com", "me.com", "gmx.com", "mail.com", "yandex.com", "zoho.com",
+                            "rediffmail.com", "rocketmail.com", "inbox.com", "fastmail.com"
+                        ];
+
+                        for (var i = 0; i < emailFld.length; i++) {
+                            var emailVal = emailFld[i].value.trim();
+                            emailFld[i].setCustomValidity(""); // Reset custom validity
+
+                            if (emailVal.length !== 0) {
                                 var atpos = emailVal.indexOf("@");
                                 var dotpos = emailVal.lastIndexOf(".");
                                 if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                                    alert("Please enter a valid email address. ");
-                                    emailFld[i].focus();
+                                    emailFld[i].setCustomValidity("Please provide a valid company email.");
+                                    return false;
+                                }
+
+                                // Check for excluded domains
+                                var domain = emailVal.split("@")[1].toLowerCase();
+                                if (excludedDomains.includes(domain)) {
+                                    emailFld[i].setCustomValidity("Please provide a valid company email.");
                                     return false;
                                 }
                             }
                         }
                         return true;
                     }
+
+                    // Attach validation to the email field
+                    window.addEventListener("load", function () {
+                        var emailFld = document.querySelector("[ftype=email]");
+                        if (emailFld) {
+                            emailFld.addEventListener("input", function () {
+                                validateEmail5637176000025292038();
+                            });
+                        }
+                    });
                     function validateMobile5637176000025292038() {
                         var form = document.forms["WebToLeads5637176000025292038"];
                         var mobileFld = form.querySelectorAll("input[name='Mobile']");
