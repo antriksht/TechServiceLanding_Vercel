@@ -35,18 +35,18 @@ const Home: React.FC = () => {
 return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>Cloud & DevOps Services | Intelegencia</title>
+        <title>NetSuite Services | Intelegencia</title>
         <meta
           name="description"
-          content="Intelegencia provides scalable Cloud and DevOps solutions including cloud migration, IaC, CI/CD, and disaster recovery—engineered to boost performance, security, and operational agility."
+          content="Intelegencia’s NetSuite experts deliver end-to-end services—implementation, data migration, analytics, integrations, and managed support—built to optimize, scale, and future-proof your ERP investment."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cloud & DevOps Services | Intelegencia" />
-        <meta property="og:description" content="Intelegencia provides scalable Cloud and DevOps solutions including cloud migration, IaC, CI/CD, and disaster recovery—engineered to boost performance, security, and operational agility." />
+        <meta property="og:title" content="NetSuite Services | Intelegencia" />
+        <meta property="og:description" content="Intelegencia’s NetSuite experts deliver end-to-end services—implementation, data migration, analytics, integrations, and managed support—built to optimize, scale, and future-proof your ERP investment." />
         <meta property="og:site_name" content="Intelegencia" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cloud & DevOps Services | Intelegencia" />
-        <meta name="twitter:description" content="Intelegencia provides scalable Cloud and DevOps solutions including cloud migration, IaC, CI/CD, and disaster recovery—engineered to boost performance, security, and operational agility." />
+        <meta name="twitter:title" content="NetSuite Services | Intelegencia" />
+        <meta name="twitter:description" content="Intelegencia’s NetSuite experts deliver end-to-end services—implementation, data migration, analytics, integrations, and managed support—built to optimize, scale, and future-proof your ERP investment." />
       </Helmet>
       
       <Header />

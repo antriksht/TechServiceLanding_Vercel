@@ -35,18 +35,18 @@ const Home: React.FC = () => {
 return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>Cloud & DevOps Services | Intelegencia</title>
+        <title>Data & Analytics Services | Intelegencia</title>
         <meta
           name="description"
-          content="Intelegencia provides scalable Cloud and DevOps solutions including cloud migration, IaC, CI/CD, and disaster recovery—engineered to boost performance, security, and operational agility."
+          content="Explore Intelegencia’s end-to-end data services—from Business Intelligence and AI solutions to Data Governance and Cloud Enablement. Drive smarter decisions and scalable growth with expert support."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cloud & DevOps Services | Intelegencia" />
-        <meta property="og:description" content="Intelegencia provides scalable Cloud and DevOps solutions including cloud migration, IaC, CI/CD, and disaster recovery—engineered to boost performance, security, and operational agility." />
+        <meta property="og:title" content="Data & Analytics Services | Intelegencia" />
+        <meta property="og:description" content="Explore Intelegencia’s end-to-end data services—from Business Intelligence and AI solutions to Data Governance and Cloud Enablement. Drive smarter decisions and scalable growth with expert support." />
         <meta property="og:site_name" content="Intelegencia" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cloud & DevOps Services | Intelegencia" />
-        <meta name="twitter:description" content="Intelegencia provides scalable Cloud and DevOps solutions including cloud migration, IaC, CI/CD, and disaster recovery—engineered to boost performance, security, and operational agility." />
+        <meta name="twitter:title" content="Data & Analytics Services | Intelegencia" />
+        <meta name="twitter:description" content="Explore Intelegencia’s end-to-end data services—from Business Intelligence and AI solutions to Data Governance and Cloud Enablement. Drive smarter decisions and scalable growth with expert support." />
       </Helmet>
       
       <Header />
